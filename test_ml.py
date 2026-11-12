@@ -50,4 +50,3 @@ def test_compute_model_metrics_returns_expected_values():
     assert precision == pytest.approx(1.0)
     assert recall == pytest.approx(0.5)
     assert fbeta == pytest.approx(2 / 3)
-    
