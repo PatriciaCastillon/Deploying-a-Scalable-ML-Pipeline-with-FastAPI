@@ -19,7 +19,7 @@ The model was trained on the UCI Census Income (Adult) dataset, which was extrac
 The evaluation data is the 20% held-out test set from the same census file, which contains 6,513 rows. It was processed with the encoder and label binarizer fitted on the training data, so no information from the test set leaked into training. Because the test set comes from the same source and time period as the training data, it measures performance on similar data rather than on new populations.
 
 ## Metrics
-_Please include the metrics used and your model's performance on those metrics._
+
 
 The model was evaluated with precision, recall, and the F1 score (F-beta with beta equal to 1). Precision is the share of people predicted to earn more than $50K who actually do. Recall is the share of people who actually earn more than $50K that the model correctly identifies. F1 is the harmonic mean of the two. These metrics were chosen over plain accuracy because the classes are imbalanced, and a model that always predicted `<=50K` would score about 76% accuracy without learning anything useful.
 
